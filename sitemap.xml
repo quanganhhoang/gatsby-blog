@@ -3,13 +3,15 @@
 <url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/kubernetes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/bash-tutorial</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/fantastic-beasts-and-where-to-find-them</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/harry-potter-and-the-half-blood-prince</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/bash-tutorial-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/bash-tutorial-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/how-to-make-this-blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/highlight</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/kubernetes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/novel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/awk</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/bash</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/grep</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://minimal-blog.lekoarts.de/gatsby-blog/tags/tutorial</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

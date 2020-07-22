@@ -29,7 +29,7 @@
   Cache-Control: public, max-age=31536000, immutable
 /framework-376edee25eb5f5cd8260.js
   Cache-Control: public, max-age=31536000, immutable
-/app-4ceaa009fecea9b1c9fd.js
+/app-d8724794da490ad8f59a.js
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
@@ -38,7 +38,7 @@
 /gatsby-blog/
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-homepage-query-tsx-f4c89008a2bf4df80db1.js>; rel=preload; as=script
@@ -47,7 +47,7 @@
 /gatsby-blog/blog
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-blog-query-tsx-ad8691e3556a288d115c.js>; rel=preload; as=script
@@ -56,88 +56,106 @@
 /gatsby-blog/tags
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx-adc9de8f9f5b97d29770.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/tags/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/kubernetes
+/gatsby-blog/bash-tutorial-2
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-fb715c2efc1cc5cfc408.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/kubernetes/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/bash-tutorial
+  Link: </gatsby-blog/page-data/bash-tutorial-2/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/bash-tutorial-1
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-fb715c2efc1cc5cfc408.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/bash-tutorial/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/fantastic-beasts-and-where-to-find-them
+  Link: </gatsby-blog/page-data/bash-tutorial-1/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/how-to-make-this-blog
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-fb715c2efc1cc5cfc408.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/fantastic-beasts-and-where-to-find-them/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/harry-potter-and-the-half-blood-prince
+  Link: </gatsby-blog/page-data/how-to-make-this-blog/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/test
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-fb715c2efc1cc5cfc408.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/harry-potter-and-the-half-blood-prince/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/test/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/about
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-7bb1e9cda7f60e5120a9.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/tags/highlight
+/gatsby-blog/tags/awk
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/tags/highlight/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/tags/kubernetes
+  Link: </gatsby-blog/page-data/tags/awk/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/bash
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/tags/kubernetes/page-data.json>; rel=preload; as=fetch; crossorigin
-/gatsby-blog/tags/novel
+  Link: </gatsby-blog/page-data/tags/bash/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/gatsby
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </gatsby-blog/page-data/tags/novel/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/gatsby/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/grep
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/grep/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/test
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/test/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/tags/tutorial
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
   Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
@@ -146,7 +164,7 @@
 /gatsby-blog/offline-plugin-app-shell-fallback/
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
-  Link: </gatsby-blog/app-4ceaa009fecea9b1c9fd.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
   Link: </gatsby-blog/component---node-modules-gatsby-plugin-offline-app-shell-js-d731f33f2b184998b449.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
