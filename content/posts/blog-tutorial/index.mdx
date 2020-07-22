@@ -1,0 +1,43 @@
+---
+title: "How to make this blog"
+date: 2020-07-19
+description: gatsby tutorial
+tags:
+  - Tutorial
+  - Gatsby
+banner:
+---
+
+
+This blog is made with gatsby and follows a custom theme by [LekoArts](https://github.com/LekoArts/gatsby-starter-minimal-blog).
+
+Here is a step by step tutorial to make your own blog :)
+
+
+1. Clone github repo
+    ```
+    git clone https://github.com/LekoArts/gatsby-starter-minimal-blog
+    ```
+
+2. Change 'Lupin' blog title to your own by adding `siteTitle` to `gatsby-config.js`
+
+    ```
+    siteMetadata: {
+        siteTitle: "QA Hoang",
+    }
+    ```
+
+3. Deploy to github pages
+    - Add deploy script to `package.json`
+        ```
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+        ```
+
+    - Add `pathPrefix` to `gatsby-config.js` which points to your github pages repo
+        ```
+        pathPrefix: "/gatsby-blog"
+        ```
+4. Add your blog posts in `content/pages/posts` using markdown
+5. Run `npm run deploy` and voila!
+
+Happy coding!

@@ -1,0 +1,54 @@
+---
+title: "Bash Tutorial pt.1"
+date: 2020-07-20
+slug: "/bash-tutorial-1"
+tags:
+    - Tutorial
+    - Bash
+    - Grep
+---
+
+## grep
+
+Shell variables
+- `$?`: return value after running a command
+- `!!`: history operator - lets you repeat prev command
+
+
+The `grep` command searches through files looking for the expression you supply 
+
+    grep printf *.c
+
+
+See also
+- man grep
+- man regex (Linux, Solaris) or man re_format (BSD, Mac)
+
+
+Use filenames found by grep on the command line:
+
+    rm -i $(grep -l 'This file is obsolete' *)
+
+
+Getting a simple True/False from a searches
+
+    if grep -q findme bigdata.file ; then echo yes ; else echo nope ; fi
+
+    # redirecting to /dev/null sends output to a `bit bucket`
+    # that just throws away everything you give it
+    if grep findme bigdata.file > /dev/null ; then echo yes ; else echo nope ; fi
+
+
+Filter search results
+
+    grep -i dec logfile | grep -vi decimal | grep -vi decimate
+
+
+Grep compressed files (zgrep, zcat, gzcat, less)
+
+    zgrep 'search term' /var/log/messages*
+
+    # used in covering damaged compressed files
+    # output everything it possibily can
+    zcat /var/log/messages.1.gz
+
