@@ -1,0 +1,59 @@
+---
+title: "Bash Tutorial pt.3"
+date: 2020-07-22
+slug: "/bash-tutorial-3"
+tags:
+    - Tutorial
+    - Bash
+    - Sort
+---
+
+
+Tricks
+- `sort -r` : reverse sort
+- `sort -f` : sort but ignore case
+
+
+Sort numbers
+
+    sort -n somedata
+
+
+Cut out parts of output
+
+    # -c option takes particular columns
+    # -d option specifies a different delimiter (default = tab character)
+    ps -l | cut -c12-15
+
+
+Removing duplicates
+
+    somesequence | sort -u
+
+    somesequence | uniq > myfile
+
+
+Translate characters
+
+    tr ';' ',' <be.fore >af.ter
+
+
+Convert uppercase to lowercase
+
+    tr 'A-Z' 'a-z' <be.fore >af.ter
+    tr '[:upper:]' '[:lower:]' <be.fore >af.ter
+
+
+Counting lines, words, characters in a file
+
+    wc data_file
+
+    # lines only
+    wc -l data_file
+
+    # words only
+    wc -w data_file
+
+    # characters only
+    wc -c data_file
+

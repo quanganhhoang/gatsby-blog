@@ -1,0 +1,116 @@
+---
+title: "Kubernetes"
+date: 2020-07-23
+description: Introduction to Kubernetes
+tags:
+  - Tutorial
+  - Kubernetes
+banner:
+---
+
+## Why Kubernetes? 
+
+- Container Orchestration
+- Deploy services, roll out new releases without downtime. Scale up/down services.
+- Portable
+- Self healing
+- Load balance requests and monitor resources
+- Easy access to logs
+
+
+## `kubectl` & `minikube`
+
+
+Start Minikube to create a cluster
+
+    # create a new VM based on Minikube image
+    # image contains Docker, rkt container engines and localkube library
+    minikube start --vm-driver=virtualbox
+
+    # stop
+    minikube stop
+
+    # delete cluster: no data or state is preserved
+    minikube delete
+
+    minikube status
+
+    minikube dashboard
+
+    # checking env variables
+    minikube docker-env
+
+
+Configuring the shell
+
+    # every command we send to local Docker client will be excecuted on Minikube VM
+    eval $(minikube docker-env)
+
+
+Verification
+
+    docker container ls
+
+    minikube ssh
+    docker container ls
+    exit
+
+    kubectl config current-context
+    kubectl get nodes
+    kubectl get all --all-namespaces
+
+
+## Pods
+
+A Pod encapsulates one or more containers. It provides a unique network IP, attaches storage resources, and also decides how containers should run. Everything in a Pod is tightly coupled.
+
+Create a Pod with Mongo
+
+    kubectl run db --image mongo --generator "run-pod/v1"
+
+    # verify
+    kubectl get pods
+    eval $(minikube docker-env)
+    docker container ls -f ancestor=mongo
+
+    # delete
+    kubectl delete pod db
+
+
+Define Pods via yaml
+
+    # example - db.yml
+    apiVersion: v1
+    kind: Pod
+    metadata:
+        name: db
+        labels:
+            type: db
+            vendor: MongoLabs
+    spec:
+        containers:
+        - name: db
+            image: mongo:3.3
+            command: ["mongod"]
+            args: ["--rest", "--httpinterface"]
+
+    # create pod defined in db.yml
+    kubectl create -f db.yml
+
+    kubectl describe -f db.yml
+
+
+### Components and stages in a Pod's scheduling
+
+1. API Server
+    - Runs on the master node
+    - All other components interact with API server and keep watch for changes
+
+2. Scheduler
+    - Runs on the master node
+    - Watch for unassigned pods and assign them to a node which has available resources (CPU and memory) matching Pod requirements
+
+3. Kubelet
+    - Runs on each node
+    - Makes sure assigned pods are running on the node
+    - If a Pod is assigned to the node Kubelet is running on, it pulls the Pod definition and create containers accordingly

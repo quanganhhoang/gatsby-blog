@@ -11,8 +11,62 @@ tags:
 ## awk
 
 Shell variables
+- `$NF` : awk's built in variable that holds number of fields found on current line
+
+
+Tricks
+- `read -a LSL` : reads a line at a time and each word is assigned to an entry in the array LSL
 
 
 awk utility reads data from the filename supplied, or from stdin if no filename is given
 
     awk '{print $1}' myinput.file
+
+    awk '{print $1}' < myinput.file
+
+    cat myinput.file | awk '{print $1}'
+
+
+Reverse words on a line
+
+    $ awk '{
+    >    for (i=NF; i>=0; i--) {
+    >        printf "%s ", $i;
+    >    }
+    >    printf "\n"
+    > }' <filename>
+
+    # one liner
+    awk '{for (i=NF; i>=0; i--) {printf "%s ", $i;} printf "\n" }'<filename>
+
+
+Summing a list of numbers
+
+    # sum up the file sizes from the output of an `ls` command
+    ls -l | awk '{sum += $5}; END {print sum}'
+
+    # calls `next` command for ^total block
+    ls -l | awk '/^total/{next} {sum += $5}; END {print sum}'
+
+
+Counting string values with bash
+
+    # # cookbook filename: cnt_owner
+    # count owners of a file using bash
+    # pipe "ls -l" into this script
+
+    declare -A AACOUNT
+    while read  -a LSL
+    do
+        # only consider lines that are 7 words or longer
+        if (( ${#LSL[*]} > 7 ))     # the size of the array
+        then
+            NDX=${LSL[3]}                 # string assign
+            (( AACOUNT[${NDX}] += 1 ))    # math increment
+        fi
+    done
+
+    for VALS in "${!AACOUNT[@]}"      # index of each element
+    do
+        echo $VALS "owns" ${AACOUNT[$VALS]} "files"
+    done
