@@ -1,0 +1,96 @@
+---
+title: "React Hooks"
+date: 2020-07-27
+description: React Hooks
+tags:
+  - React
+  - React Hooks
+banner:
+---
+
+### useState
+
+
+### useEffect
+
+    const [user, setUser] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('Jane Doe');
+
+    // triggers on any life cycle update
+    // takes an array of properties that trigger update
+    useEffect(() => {
+        const fetchFunc = async () => {
+            const res = await fetch(``);
+            const resJson = await res.json();
+            setUser(resJson);
+        }
+        fetchFunc();
+    }, [searchQuery]); // only runs when searchQuery changes
+
+
+ComponentDidMount
+
+    //Class
+    componentDidMount() {
+        console.log('I just mounted!');
+    }
+    
+    //Hooks
+    useEffect(() => {
+        console.log('I just mounted!');
+    }, [])
+
+ComponentWillUnmount
+    //Class
+    componentWillUnmount() {
+        console.log('I am unmounting');
+    }
+    
+    //Hooks
+    useEffect(() => {
+        return () => console.log('I am unmounting');
+    }, [])
+
+ComponentWillReceiveProps
+    //Class
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.count !== this.props.count) {
+            console.log('count changed', nextProps.count);
+        }
+    }
+    
+    //Hooks
+    useEffect(() => {
+        console.log('count changed', props.count);
+    }, [props.count])
+
+
+### custom hook
+    // use-fetch.effect.js
+
+    import { useState, useEffect } from 'react';
+    
+    const useFetch = (url) => {
+        const [data, setData] = useState(null);
+        useEffect(() => {
+            const fetchData = async () => {
+                const res = await fetch(url);
+                setData(res.json());
+            };
+            fetchData();
+        });
+
+        return data;
+    }
+
+### useReducer
+
+
+### useContext
+
+
+### useMemo
+
+
+### useCallback
+

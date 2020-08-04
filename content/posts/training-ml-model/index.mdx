@@ -1,0 +1,194 @@
+---
+title: "Training a ML Model to Identify Offensive Speech"
+date: 2020-07-28
+description: Training a ML Model to Identify Offensive Speech
+tags:
+  - Machine Learning
+  - Streamlit
+  - Text Classifier
+banner:
+---
+
+Authors: Josh Baron, Nancy Tran, QA Hoang
+
+
+### Problem: Identify hate/offensive speech
+
+- Goals:
+    - Minimize false negatives
+    - Improve false positives via user feedback
+
+### Dataset:
+
+The initial dataset we used was data from the paper Automated Hate Speech Detection and the Problem of Offensive Language by T. Davison, et al. 
+They searched for tweets that contained words and phrases identified by internet users as hate speech and had them labelled by CrowdFlower workers. 
+The tweets were labelled as hate speech, offensive speech, or neither. Each tweet was labeled 3 times, and the final labeling was the majority label. 
+In this dataset, only 5% of the tweets were labelled as hate speech.
+
+We initially re-labelled the data so that offensive speech and neither were labeled as “non-hate speech” and left the hate speech label as is. 
+When we ran our initial models, the confusion matrix indicated that there were a decent number of false positives and our metrics were pretty low (see confusion matrix and metrics table below). 
+
+
+### Import packages
+
+    # nltk library
+    import nltk
+    nltk.download("stopwords")
+    nltk.download("punkt")
+
+    from nltk.stem.wordnet import WordNetLemmatizer
+    from nltk.tokenize import word_tokenize
+    from nltk.corpus import stopwords
+    from nltk.stem.porter import PorterStemmer
+    from nltk import pos_tag
+
+    from collections import defaultdict
+
+    import pandas as pd
+    import numpy as np
+    import re   # Regular expressions
+    import requests
+    from io import StringIO
+    import string
+
+    # sklearn
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.model_selection import train_test_split
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import( 
+        roc_auc_score, 
+        roc_curve,
+        auc, 
+        confusion_matrix,
+        recall_score, 
+        precision_score, 
+        accuracy_score,
+        classification_report,
+        plot_confusion_matrix
+    )
+    from sklearn.svm import LinearSVC, SVC
+    from sklearn.model_selection import GridSearchCV, StratifiedKFold
+    from sklearn.dummy import DummyClassifier
+    from sklearn.naive_bayes import MultinomialNB
+    from sklearn.ensemble import BaggingClassifier, GradientBoostingClassifier, VotingClassifier, StackingClassifier
+    from sklearn.preprocessing import minmax_scale, FunctionTransformer
+    from sklearn.pipeline import Pipeline, FeatureUnion
+    from sklearn.feature_selection import SelectFromModel
+
+    # Misc
+    import matplotlib.pyplot as plt
+    import textstat
+    from scipy.sparse import hstack
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+    from imblearn.over_sampling import SMOTE
+    from joblib import dump, load
+
+
+### Data Preprocessing
+
+Sanitizing data
+
+    def preprocess(tweet: str):
+        space_pattern = '\s+'
+        url_regex = ('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|'
+            '[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
+        mention_regex = '@[^\s]+'
+        symbol_regex = '&#[^\s]+'
+        
+        parsed_tweet = tweet.lower()
+        parsed_tweet = re.sub(space_pattern, ' ', parsed_tweet)
+        parsed_tweet = re.sub(url_regex, 'URLHERE', parsed_tweet)
+        parsed_tweet = re.sub(symbol_regex, ' ', parsed_tweet)
+        parsed_tweet = re.sub(mention_regex, 'MENTIONHERE', parsed_tweet)
+        
+        return parsed_tweet
+
+
+    def analyzer(doc: str):
+        stemmer = PorterStemmer()
+        words = word_tokenize(doc)
+        filtered_words = [word for word in words if not word in all_stopwords and word.isalnum()]
+        
+        return [stemmer.stem(word) for word in filtered_words if word not in ['URLHERE', 'MENTIONHERE']]
+
+
+    def tokenize(tweet):
+        stemmer = PorterStemmer()
+        tweet = " ".join(re.split("[^a-zA-Z]*", tweet.lower())).strip()
+        tokens = [stemmer.stem(t) for t in tweet.split()]
+        return tokens
+
+
+Adding sentiment analysis feature
+
+    def getSentiment(df):
+        sentiment_analyzer = SentimentIntensityAnalyzer()
+        scores = defaultdict(list)
+        for i in range(len(df)):
+            score_dict = sentiment_analyzer.polarity_scores(df[i])
+            scores['neg'].append(score_dict['neg'])
+            scores['neu'].append(score_dict['neu'])
+            scores['pos'].append(score_dict['pos'])
+            scores['compound'].append(score_dict['compound'])
+        return np.array(pd.DataFrame(scores))
+
+
+Tfidf Vectorizer
+
+    all_stopwords = stopwords.words('english')
+    all_stopwords += ['user', '@', '!', 'rt', 'http', 'lol', 'like', 'amp', 'co', 'get', 'ff']
+    vectorizer = TfidfVectorizer(
+        preprocessor=preprocess,
+        stop_words=all_stopwords,
+        min_df=5,
+        max_df=.75,
+        analyzer=analyzer,
+        ngram_range=(2,4),
+        smooth_idf=False,
+        max_features=10000
+    )
+
+    char_vectorizer = TfidfVectorizer(
+        tokenizer=tokenize,
+        preprocessor=preprocess,
+        stop_words=all_stopwords,
+        min_df=5,
+        max_df=.5,
+        ngram_range=(3,5),
+        smooth_idf=False,
+        max_features=10000
+    )
+
+
+Combining features with `FeatureUnion`
+
+    feature_union = FeatureUnion([
+        ('word_vec', vectorizer),
+        ('char_vec', char_vectorizer),
+        ('sentiment', FunctionTransformer(getSentiment))
+    ])
+
+
+Training
+
+    X, y = vectorizer.fit_transform(df['tweet']), df['class']
+    X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y,  test_size=0.3)
+
+    ### SMOTE
+
+    sm = SMOTE(random_state=42)
+    X_train_sm, y_train_sm = sm.fit_resample(X_train, y_train)
+    print(X_train_sm.shape, y_train_sm.shape)
+
+    ### SMOTE
+
+    clf = LinearSVC(max_iter=1000000, class_weight={1: 4.5, 0: 1}, loss='hinge')
+    clf.fit(X_train_sm, y_train_sm)
+
+    pipeline = Pipeline([
+        ('feature_union', feature_union),
+        ('select_from_model', SelectFromModel(LogisticRegression(max_iter=100000))),
+        ('classifier', clf)
+    ])
+
+    pipeline.fit(df['tweet'], y)
