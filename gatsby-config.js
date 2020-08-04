@@ -11,7 +11,7 @@ module.exports = {
         siteTitleAlt: "QA Blog",
         siteHeadline: "A blog of daily 5 min engineering digests",
         siteUrl: "https://quanganhhoang.github.io/gatsby-blog/",
-        siteDescription: "A blog of daily 5 min engineering digests",
+        siteDescription: "QA Hoang. A blog of daily 5 min engineering digests",
         siteLanguage: "en",
         siteImage: "/static/banner.jpg",
         author: "QA Hoang"
