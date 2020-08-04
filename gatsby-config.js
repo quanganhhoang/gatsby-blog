@@ -8,7 +8,13 @@ module.exports = {
     pathPrefix: "/gatsby-blog",
     siteMetadata: {
         siteTitle: "QA Hoang",
-        siteTitleAlt: `QA Blog`,
+        siteTitleAlt: "QA Blog",
+        siteHeadline: "A blog of daily 5 min engineering digests",
+        siteUrl: "https://quanganhhoang.github.io/gatsby-blog/",
+        siteDescription: "A blog of daily 5 min engineering digests",
+        siteLanguage: "en",
+        siteImage: "/static/banner.jpg",
+        author: "QA Hoang"
     },
     plugins: [
     {
