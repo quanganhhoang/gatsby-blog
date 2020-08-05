@@ -62,6 +62,15 @@
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx-adc9de8f9f5b97d29770.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/tags/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/how-to-prepare-for-swe-internship-technical-interviews
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-fb715c2efc1cc5cfc408.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/how-to-prepare-for-swe-internship-technical-interviews/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/the-self-taught-swe
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
@@ -179,6 +188,15 @@
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-7bb1e9cda7f60e5120a9.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/algorithms
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/algorithms/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/tags/awk
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
@@ -233,6 +251,15 @@
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/tags/grep/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/internship
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/internship/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/tags/kubernetes
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
@@ -305,6 +332,15 @@
   Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
   Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </gatsby-blog/page-data/tags/streamlit/page-data.json>; rel=preload; as=fetch; crossorigin
+/gatsby-blog/tags/technical-interviews
+  Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
+  Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
+  Link: </gatsby-blog/app-d8724794da490ad8f59a.js>; rel=preload; as=script
+  Link: </gatsby-blog/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </gatsby-blog/aed2e917f30c051bccba91aa15989a75fd0bd633-fc9a2565542528c512cf.js>; rel=preload; as=script
+  Link: </gatsby-blog/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-c60a315ce780f3cd884e.js>; rel=preload; as=script
+  Link: </gatsby-blog/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </gatsby-blog/page-data/tags/technical-interviews/page-data.json>; rel=preload; as=fetch; crossorigin
 /gatsby-blog/tags/test
   Link: </gatsby-blog/webpack-runtime-6cc72391a98acd70711e.js>; rel=preload; as=script
   Link: </gatsby-blog/framework-376edee25eb5f5cd8260.js>; rel=preload; as=script
