@@ -4,6 +4,7 @@ import "dotenv/config"
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
+  pathPrefix: "/gatsby-blog",
   siteMetadata: {
     siteTitle: "QA Hoang",
     siteTitleAlt: "QA Blog",
@@ -13,7 +14,7 @@ const config: GatsbyConfig = {
     siteLanguage: "en",
     siteImage: "/static/banner.jpg",
     author: "QA Hoang"
-},
+  },
   trailingSlash: `always`,
   plugins: [
     {
