@@ -5,11 +5,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    siteTitle: "QA Hoang",
-    siteTitleAlt: "QA Blog",
-    siteHeadline: "A blog of daily 5 min engineering digests",
-    siteUrl: "https://quanganhhoang.github.io/gatsby-blog/",
-    siteDescription: "QA Hoang. A blog of daily 5 min engineering digests",
+    siteTitle: "QA Hoang - Career Coach",
+    siteTitleAlt: "QA The Career Coach",
+    siteHeadline: "Offering career coaching services for Vietnamese high school & college students",
+    siteUrl: "https://qahoang.netlify.app/",
+    siteDescription: "QA Hoang - Career Coach",
     siteLanguage: "en",
     siteImage: "/static/banner.jpg",
     author: "QA Hoang"
